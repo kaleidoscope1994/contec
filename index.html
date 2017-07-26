@@ -15,7 +15,11 @@
 		//alert("asd");
 		$("#total").hide();
 		var urlstr = $("#_url").val();
+		if(urlstr!=""){
 		urlstr = encodeURIComponent(urlstr);
+		}else{
+		urlstr="null";
+		}
 		//alert(urlstr);
 		var monstr = $("#_input").val();
 		monstr = parseInt(monstr);//转换为数字
