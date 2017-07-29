@@ -10,7 +10,6 @@
 	$(function() {
     FastClick.attach(document.body);
 	});
-
 	function _submit(){
 		//alert("asd");
 		$("#total").hide();
@@ -34,9 +33,9 @@
 		//alert(DuringTime);
 		window.location="http://"+Xsub+".leanapp.cn/admin009/"+Xchange+"/"+DuringTime+"/"+urlstr;
 	}
-
-
-
+	function _flash(){
+		window.location="http://"+Xsub+".leanapp.cn/flash009";
+	}
 	</script>
 </head>
 <body  style="padding:0;margin:0;background-color:#202020;text-align:center">
@@ -49,6 +48,7 @@
 	<input id="_input_ch" type="text" name="changes" value="30" style="text-align:right;width:150px;margin-top:10px;"><span style="color:#FFFFFF;"> Change</span>
 	<br>
 	<input id="_input_sub" type="text" name="subdomains" value="btrun" style="text-align:right;width:150px;margin-top:10px;"><span style="color:#FFFFFF;"> Subdomain</span>
+	<div id="_btn_f" onclick="_flash();" style="width:30px;height:50px;background-color:#55ff33;margin-top:10px;line-height:50px;text-align:center;">Flash</div>
 	
 </div>
 </div>
